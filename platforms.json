@@ -1,0 +1,36 @@
+{
+  "backblaze": {
+    "minimum_payment": 7,
+    "storage_price": 0.005,
+    "transfer_price": 0.01
+  },
+  "bunny": {
+    "maximum_payment": 10,
+    "storage_price": {
+      "HDD": 0.01,
+      "SSD": 0.02
+    },
+    "transfer_price": 0.01
+  },
+  "scaleway": {
+    "storage": {
+      "Multi": {
+        "free": 75,
+        "price": 0.06
+      },
+      "Single": {
+        "free": 75,
+        "price": 0.03
+      }
+    },
+    "transfer_price": {
+      "free": 75,
+      "price": 0.02
+    }
+  },
+  "vultr": {
+    "minimum_payment": 5,
+    "storage_price": 0.01,
+    "transfer_price": 0.01
+  }
+}

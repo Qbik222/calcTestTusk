@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="slider-container">
+        <label for="storage-slider">Storage (GB)</label>
+        <div class="slider-value" id="storage-value">500</div>
+        <input
+          type="range"
+          min="0"
+          max="1000"
+          value="500"
+          class="slider"
+          id="storage-slider"
+        />
+
+        <label for="transfer-slider">Transfer (GB)</label>
+        <div class="slider-value" id="transfer-value">500</div>
+        <input
+          type="range"
+          min="0"
+          max="1000"
+          value="500"
+          class="slider"
+          id="transfer-slider"
+        />
+      </div>
+
+      <div class="price-chart">
+        <h2>Ціни</h2>
+        <div class="chart">
+          <div class="bar backblaze"></div>
+          <div class="bar bunny"></div>
+          <div class="bar scaleway"></div>
+          <div class="bar vultr"></div>
+        </div>
+        <div class="labels">
+          <div class="label">
+            <h2>Backblaze</h2>
+          </div>
+          <div class="label">
+            <h2>Bunny.net</h2>
+            <input
+              type="radio"
+              name="storage"
+              value="HDD"
+              id="hdd-radio"
+              checked
+            />
+            <label for="hdd-radio">HDD</label> <br />
+            <input type="radio" name="storage" value="SSD" id="ssd-radio" />
+            <label for="ssd-radio">SSD</label>
+          </div>
+          <div class="label">
+            <h2>Scaleway</h2>
+            <input
+              type="radio"
+              name="scaleway-service"
+              value="Single"
+              id="single-radio"
+              checked
+            />
+            <label for="single-radio">Single</label> <br />
+            <input
+              type="radio"
+              name="scaleway-service"
+              value="Multi"
+              id="multi-radio"
+            />
+            <label for="multi-radio">Multi</label>
+          </div>
+
+          <div class="label">
+            <h2>Vultr</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
